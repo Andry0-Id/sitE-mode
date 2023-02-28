@@ -1,2 +1,2 @@
-# sitE-mode
-Site de mode
+# Projet de site de mode
+
