@@ -1,0 +1,36 @@
+.grid{
+    display: grid;;
+}
+
+.grid-news{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 31px;
+    opacity: 1;
+    background: var(--color-second);
+    box-shadow:  var(--shadow);
+}
+
+.grid-news ul{
+    list-style: none;
+}
+
+.topic{
+    margin: 20px;
+}
+.topic ul{
+    display: flex;
+}
+
+.topic ul li{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    color: var(--color-four);
+    background: var(--color-principale);
+}
+.img-news{
+    width: 250px;
+    border-radius: 31px 0  0 31px;
+}
