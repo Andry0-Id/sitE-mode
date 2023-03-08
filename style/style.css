@@ -1,51 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Hack Nerd Font Mono';
+.subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
     color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+.subnav:hover .subnavbtn {
+  background-color: gray;
 }
 
-a{
-    text-decoration: none;
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  z-index: 1;
 }
 
-nav{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 10px;
-    background: black;
+.subnav-content a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.nav-content ul li{
-    display: inline-flex;
-    padding: 0 15px;
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
 }
 
-.search-bar{
-    padding: 10px;
-    width: 400px;
-    border: 0;
-    border-radius: 20px;
+.subnav:hover .subnav-content {
+  display: block;
 }
 
-.start-page{
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    padding: 200px;
-    background: rgb(167, 236, 236);
-    border-radius: 0 0 25px;
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.start-content ul li{
-    text-align: center;
-    display: inline-flex;
-    padding: 20px;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg img {
+  /* The image used */
+  /* Full height */
+  height: auto;
+  width: 100%;
+   
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.boutonHF{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boutonHF button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.boutonHF button:hover {
+  background-color: #555;
+  color: white;
+}
+
 
 .footer{
-    display: flex;
-    justify-content: space-between;
-    background: gray;
+    
+    background: white;
     padding: 20px;
+    text-align: center;
+}
+
+.footer a, ul{
+    
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
+
 }
