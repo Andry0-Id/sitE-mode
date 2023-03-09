@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hack Nerd Font Mono';
+}
+
+:root{
+    --color-principale:#7D80C7;
+    --color-second: #BED1FC;
+    --color-three: #F1F8FF;
+    --color-four: #FAFAFA;
+    --shadow:0px 0px 6px grey,
+    0px 0px 5px grey;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+/* Partie barre de navigation */
+nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    background: var(--color-principale);
+}
+
+/* Partie Logo */
+.logo{
+    padding: 0 30px;
+}
+
+.logo a{
+    color: var(--color-three);
+}
+.nav-content ul li{
+    display: inline-flex;
+    padding: 0px;
+}
+
+.nav-content ul li a{
+    padding: 12px;
+}
+
+.active{
+    color: var(--color-principale);
+    background: var(--color-four);
+    border-radius: 15px 0 15px 0;
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.active:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+    translate: 1px -1px;
+}
+
+.disabled{
+    color: var(--color-four);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+.disabled:hover{
+    background: var(--color-four);
+    color: var(--color-principale);
+    transition: 0.5s ease;
+    opacity: 0.9;
+}
+
+.search{
+    border-radius: 30px;
+    padding-right: 10px;
+}
+
+.search-bar{
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    opacity: 0.9;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+}
+
+/* Fin du partie naviagation */
+
+.start-page{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border-radius: 31px;
+    opacity: 1;
+    background: var(--color-second);
+    box-shadow:  var(--shadow);
+}
+
+.welcome-start{
+    margin: 30px;
+    text-align: left;
+    color: var(--);
+}
+
+.img-start{
+    border-radius: 31px 0  0 31px;
+    width: 680px;
+    box-shadow:  var(--shadow);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-principale);
+    padding: 20px;
+    color: var(--color);
+}
+
+.footer ul{
+    padding: 10px;
+}
+
+.footer ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.footer ul li a{
+    color: var(--color);
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    text-decoration:underline;
+}
